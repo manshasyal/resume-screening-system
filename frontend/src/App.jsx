@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 
 function App() {
@@ -47,7 +48,7 @@ function App() {
 
     const response =
       await fetch(
-        "http://127.0.0.1:5000/upload",
+        "https://resume-screening-backend-nrrb.onrender.com/upload",
         {
           method: "POST",
           body: formData
@@ -79,7 +80,7 @@ function App() {
 
       const response =
         await fetch(
-          "http://127.0.0.1:5000/analyze",
+          "https://resume-screening-backend-nrrb.onrender.com/analyze",
           {
             method: "POST",
 
@@ -244,3 +245,4 @@ function App() {
 }
 
 export default App;
+
